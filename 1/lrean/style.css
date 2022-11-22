@@ -1,0 +1,9 @@
+.panel{
+  margin: 25px;
+  background-color: blue;
+  width: 120px;
+  height: 55px;
+}
+.active{
+  width: 450px;
+}

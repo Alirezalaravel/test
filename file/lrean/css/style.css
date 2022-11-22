@@ -1,0 +1,31 @@
+
+div{
+    padding: 10px;
+    text-align: center;
+}
+
+#large{
+    display: none;
+}
+
+#normal{
+    display: none;
+}
+
+.container{
+    height: 700px;
+}
+
+img{
+    cursor: pointer;
+    border-radius: 35px;
+    width: 600px;
+}
+img[src="image/poster_3.jpeg"]{
+    height: 1200;
+}
+
+.activ{
+    -webkit-transform: scale(-1,-1);
+    transform: scale(-1,-1);
+}

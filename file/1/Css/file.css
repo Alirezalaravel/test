@@ -1,0 +1,386 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+div.first {
+    position: relative;
+    height: 750px;
+	background-size: cover;
+    background-image: url("../images/banner2.jpg");
+}
+.first .nv{
+    margin: 0;
+    width: 50%;
+    border: black solid 1px;
+    position: absolute;
+    top: 750px;
+    left: 25%;
+}
+header{
+    padding: 20px;
+}
+
+header .row{
+    padding: 0 70px 0 70px;
+}
+
+header .col{
+    text-align: left;
+    color: white;
+    font-size: 30px;
+}
+
+
+header .col-auto a{
+    padding: 0 17px;
+    color: black;
+    text-decoration: none;
+}
+header .col-auto a:hover{
+    color: white;
+}
+.bi{
+    color: rgb(0, 0, 0);
+}
+
+#col_f{
+    color: white;
+}
+
+.mn{
+    margin-top: 165px;
+}
+.mn p.vv{
+    color: rgba(0, 0, 0, 0.65);
+    font-family: tahoma;
+    font-size: 80px;
+}
+.mn p.vv span{
+    color: rgba(255, 0, 0, 0.48);
+}
+.mn .mj{
+    display: inline-block;
+    width: 600px;
+    font-size: 17px;
+    font-family: Tahoma;
+    color: white;
+}
+
+.mn div>button{
+    border: 0;
+    font-family: Tahoma;
+    margin-top: 30px;
+    padding: 15px 60px 15px 60px;
+    background-color: rgba(0, 0, 0, 0.73);
+    color: white;
+    font-size: 17px;
+    border-radius: 50px;
+}
+.mn div>button:hover{
+    background-color: #983822;
+}
+.first img{
+    left: 47.7%;
+    position: absolute;
+    top: 708px;
+}
+
+.sa{
+    width: 100%;
+    padding-top: 135px;
+    background-image: url("../images/plan_bg.png");
+}
+
+.two{
+    margin-bottom: 120px;
+    width: 100%;
+    background-image: url("../images/plan_bg.png");
+}
+
+.two .A .col-auto img{
+    width: 100%;
+    border: solid white 25px;
+    padding: 0;
+}
+
+.mm{
+    padding: 0px 150px;
+}
+
+.KL{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ff{
+    margin: auto;
+    width: 80%;
+    color: white;
+}
+.Fd{
+    padding: 0 135px;
+}
+
+.dd{
+    background-color: #f8d98f;
+    padding: 80px 35px;
+}
+
+.three .A>div{
+    width: 90%;
+}
+
+.three .A  img{
+    width: 90%;
+}
+.mf{
+    margin-top: 90px;
+}
+.three{
+    margin-bottom: 25px;
+}
+.four{
+    width: 100%;
+    background-image: url("../images/about_bg.jpg");
+}
+.four>div{
+    padding-top: 125px;
+    padding-bottom: 125px;
+    width: 80%;
+}
+.four .A{
+    margin-top: 125px;
+}
+.w{
+    margin-top: 35px;
+    width: 100%;
+}
+.four button{
+    font-family: Tahoma;
+    padding: 8px 30px 8px 30px;
+    color: white;
+    background-color: #413c31;
+}
+
+.four button:hover{
+    color: white;
+    background-color: #e6615a;
+}
+
+.four B>div{
+    width: 50%;
+}
+
+.five .row>.col-lg-6:first-child{
+    position: relative;
+}
+
+.five .row>.col-lg-6:last-child .ee{
+    line-height: 28px;
+}
+
+
+.five .row>.col-lg-6:first-child .dds{
+    font-size: 20px;
+    font-family: Tahoma;
+    color: white;
+    padding: 15px 27px;
+    background-color: coral;
+    position: absolute;
+    right: 0px;
+    top: 40%;
+}
+.five .row>.col-lg-6:last-child{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: rgba(0, 0, 0, 0.12) solid 2px;
+    border-right: rgba(0, 0, 0, 0.11) solid 2px;
+    border-bottom: rgba(0, 0, 0, 0.1) solid 2px;
+}
+.five .row>.col-lg-6:last-child>div{
+    width: 90%;
+    margin: auto;
+}
+.five .HGF{
+    width: 83.8%;
+}
+
+.five .row{
+    width: 1080px;
+}
+.five .row>.col-lg-6:last-child .A{
+    margin-top: 50px;
+}
+
+.five .row>.col-lg-6:last-child a{
+    text-decoration: none;
+    color: black;
+}
+.five .row>.col-lg-6:last-child a:hover{
+    color: #e6615a;
+}
+
+.six{
+    margin-bottom: 80px;
+}
+.six .m{
+    margin-bottom: 60px;
+}
+.seven>.A .icon span{
+    margin-left: 8px;
+    color: #e6615a;
+}
+
+.seven>.A .icon i{
+    font-size: 25px;
+    color: #e6615a;
+    padding: 10px;
+    border: #e6615a solid 1px;
+}
+.seven>.A .icon .dsa{
+    padding: 10px 13px;
+}
+.seven>.A .icon{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.seven>.A{
+    margin-top: 23px;
+    padding: 30px 20px;
+    bottom: 88%;
+    border-top: rgba(0, 0, 0, 0.09) solid 3px;
+    left: 13%;
+    width: 75%;
+    background-color: white;
+    position: absolute;
+}
+.seven .A>div:first-child a{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
+.seven .A>div:first-child a:hover{
+
+}
+.seven .B>div:last-child{
+    color: white;
+}
+.seven{
+    background-color: #282828;
+    margin: 0;
+    padding: 0;
+}
+
+.FFF{
+    color: white;
+}
+.seven{
+    position: relative;
+}
+
+.seven .B .S>div{
+    width: 87%;
+    margin: auto;
+    padding-top: 120px;
+}
+
+.seven .B .S>div input{
+    background-color: #282828;
+    padding: 7px;
+    border: 0;
+    border-bottom: solid 2px white;
+    margin-top: 15px;
+    width: 100%;
+}
+.seven .B .S>div textarea{
+    margin-top: 45px;
+    background-color: #282828;
+    padding: 7px;
+    border: 0;
+    border-bottom: solid 2px white;
+    width: 100%;
+}
+
+.seven .B .S>div button{
+    margin-top: 35px;
+    padding: 12px 45px 12px 45px;
+    color: white;
+    background-color: #e6615a;
+    border-radius: 50px;
+}
+.seven .B .S>div button:hover{
+    background-color: white;
+    color: #e6615a;
+}
+
+.first .AAA{
+    padding: 25px 120px;
+}
+
+
+
+
+.seven .ds i{
+    padding: 8px;
+    font-size: 28px;
+}
+.seven .ds a{
+    color: white;
+}
+.seven .ds a{
+    padding: 0;
+    color: white;
+}
+
+.seven .ds a:hover{
+    color: #e6615a;
+}
+.seven .FFF a{
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+.seven .FFF a:hover{
+    color: coral;
+}
+
+
+.activ{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 100%;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.hide{
+    cursor: pointer;
+    background-color: #e6615a;
+}
+
+.div2{
+    display: none;
+}
+.div3{
+    display: none;
+}
+.carousel{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    background-color: rgba(53, 48, 48, 0.342);
+    border: 5px solid black;
+    margin-bottom: 65px;
+}
+
+.select{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+}

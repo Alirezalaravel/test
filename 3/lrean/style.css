@@ -1,0 +1,28 @@
+@keyframes animashen {
+    0%{color: brown;}
+    25%{color: darkgreen;}
+    50%{color: cornflowerblue;}
+    70%{color: rgb(60, 206, 181);}
+    100%{color: indianred;}
+}
+
+div.div{
+    padding: 30px;
+    text-align: center;
+}
+button{
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 25px;
+}
+
+p{
+    animation-iteration-count: infinite;
+    animation-name: animashen;
+    animation-duration: 8S;
+    font-size: 35px;
+    text-align: center;
+}
+.container{
+    margin-top: 150px;
+}

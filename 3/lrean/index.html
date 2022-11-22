@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 align-self-center">
+                <p><b>سلام خوش آمدید</b></p>
+                <p id="element"></p>
+            </div>
+            <div class="col-6 align-self-center">
+                <div class="div">
+                    <button id="open"><b>! نمایش اطلاعات </b></button> <br><br>
+                    <button id="close"><b>! پنهان کردن اطلاعات </b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const tag = document.getElementById('element');
+        const open = document.getElementById('open');
+        const close = document.getElementById('close');
+        open.addEventListener('click',function() {
+            tag.innerText = "Hello";
+        })
+        close.addEventListener('click',function() {
+            tag.innerText = '';
+        })
+    </script>
+
+    <script src="bootstrap.min.js"></script>
+</body>
+</html>

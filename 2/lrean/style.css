@@ -1,0 +1,19 @@
+.circle{
+    background-color: rgba(210, 105, 30, 0.219);
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 100%;
+  }
+  div{
+    text-align: center;
+    margin-top: 35px;
+  }
+  .active{
+    background-color: chocolate;
+  }
+  button{
+    cursor: pointer;
+  }
+  button:disabled:hover{
+    cursor: not-allowed;
+  }

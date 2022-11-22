@@ -1,0 +1,37 @@
+.five .row>.col-lg-6:last-child{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0 !important;
+    border-top: 0;
+    border-left: rgba(0, 0, 0, 0.11) solid 2px;
+}
+.five .row>.col-lg-6:last-child .A{
+    margin-top: 50px;
+}
+
+.five .kd{
+    padding-bottom: 80px;
+}
+.mn{
+    padding-left: 10px;
+}
+.G{
+    margin-top: 25px;
+    padding: 0;
+}
+
+.seven .JHF span{
+    font-size: 20px;
+}
+
+.seven>.A .icon i{
+    font-size: 20px;
+}
+
+header .row{
+    padding: 0 9px;
+}
+
+.three .A .kk{
+    margin-top: 80px;
+}

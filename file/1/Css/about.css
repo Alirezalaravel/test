@@ -1,0 +1,34 @@
+
+
+.four{
+    width: 100%;
+    background-image: url("../images/about_bg.jpg");
+}
+.four>div{
+    padding-top: 125px;
+    padding-bottom: 125px;
+    width: 80%;
+}
+.four .A{
+    margin-top: 125px;
+}
+.w{
+    margin-top: 35px;
+    width: 100%;
+}
+.four button{
+    font-family: Tahoma;
+    padding: 8px 30px 8px 30px;
+    color: white;
+    background-color: #413c31;
+}
+
+.four button:hover{
+    color: white;
+    background-color: #e6615a;
+}
+
+.four B>div{
+    width: 50%;
+}
+
