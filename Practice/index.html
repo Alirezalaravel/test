@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        p{
+            color: white;
+        }
+    </style>
+</head>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+<body>
+    <script>
+        const number = Math.floor(Math.random() * 100 + 100);
+        document.getElementById('p1').innerText = number; 
+
+        const array = ["Hello Alireza","Hello Ali","Hello reza","Hello sara"];
+        document.getElementById("p2").innerHTML = array.map(x => `<span>${x} ?</span> <br>`).join('');
+    
+        // 1
+        var person = {
+            "name" : "Alireza",
+            "color" : ["red","blue"],
+            
+            "phoneNumbers": 
+                [
+                    {
+                    "type": "home",
+                    "number": "212 555-1234"
+                    }
+                ]
+        }
+
+        // 2
+        // var person = {
+        //     "name" : "Alireza",
+        //     "color" : ["red","blue"],
+
+        //     "phoneNumbers": 
+        //         {
+        //         "type": "home",
+        //         "number": "212 555-1234"
+        //         }
+        // }
+
+
+        document.getElementById('p3').innerHTML = person.phoneNumbers[0]['number']
+
+        var names = '["reza","Ali"]';
+
+        document.getElementById('p4').innerText = JSON.parse(names).join(' ')
+        
+    </script> 
+</body>
+</html>
+
+
