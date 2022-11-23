@@ -18,6 +18,7 @@
     <p id="p2"></p>
     <p id="p3"></p>
     <p id="p4"></p>
+    <a href="index.html"></a>
 <body>
     <script>
         const number = Math.floor(Math.random() * 100 + 100);
@@ -58,7 +59,9 @@
         var names = '["reza","Ali"]';
 
         document.getElementById('p4').innerText = JSON.parse(names).join(' ')
-        
+
+        console.log(document.querySelector('a').getAttribute('href'))
+
     </script> 
 </body>
 </html>
