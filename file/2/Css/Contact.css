@@ -1,0 +1,94 @@
+.seven>.A .icon span{
+    margin-left: 8px;
+    color: #e6615a;
+}
+.seven>.A .icon i{
+    font-size: 25px;
+    color: #e6615a;
+    padding: 10px;
+    border: #e6615a solid 1px;
+}
+.seven>.A .icon{
+    margin-top: 15px;
+    padding: 25px;
+    margin-left: 15px;
+}
+
+.seven>.A{
+    margin-top: 23px;
+    padding: 30px 20px;
+    bottom: 88%;
+    border-top: rgba(0, 0, 0, 0.09) solid 3px;
+    left: 13%;
+    width: 75%;
+    background-color: white;
+    position: absolute;
+}
+.seven .A>div:first-child a{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
+.seven .A>div:first-child a:hover{
+
+}
+
+
+.seven{
+    margin-top: 85px;
+    padding: 0;
+}
+.seven .B{
+    margin: 0;
+    width: 100%;
+    background-color: #282828;
+}
+
+.seven{
+    height: auto;
+}
+
+.seven .B .S>div{
+    width: 87%;
+    margin: auto;
+    padding: 95px 0;
+}
+.seven .B{
+    margin-bottom: 80px;
+}
+
+.seven .B .S>div input{
+    background-color: #282828;
+    padding: 7px;
+    border: 0;
+    border-bottom: solid 2px white;
+    margin-top: 15px;
+    width: 100%;
+}
+.seven .B .S>div textarea{
+    margin-top: 45px;
+    background-color: #282828;
+    padding: 7px;
+    border: 0;
+    border-bottom: solid 2px white;
+    width: 100%;
+}
+
+.seven .B .S>div button{
+    margin-top: 35px;
+    padding: 12px 45px 12px 45px;
+    color: white;
+    background-color: #e6615a;
+    border-radius: 50px;
+}
+.seven .B .S>div button:hover{
+    background-color: white;
+    color: #e6615a;
+}
+
+
+
+.seven .ds i{
+    padding: 8px;
+    font-size: 28px;
+}

@@ -369,14 +369,18 @@ header .col-auto a:hover{
 .div3{
     display: none;
 }
-.car_ousel{
-    padding: 0;
+.carousel{
     display: inline-block;
-    height: 25px;
-    width: 25px;
+    width: 26px;
+    height: 26px;
     border-radius: 100%;
     background-color: rgba(53, 48, 48, 0.342);
     border: 5px solid black;
     margin-bottom: 65px;
 }
 
+.select{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+}

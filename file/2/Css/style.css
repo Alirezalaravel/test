@@ -1,0 +1,23 @@
+
+.five .row>.col-lg-6:last-child .A{
+    margin-top: 40px;
+}
+
+
+.five .HGF{
+    width: 100% !important;
+}
+.mn{
+    width: 100%;
+}
+.five .container{
+    padding: 0;
+}
+
+.three .A>div{
+    width: 100%;
+}
+.three .A{
+    padding: 0;
+}
+

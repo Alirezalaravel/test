@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.A1{
+    padding: 30px 200px;
+    background-color: #e6615a;
+}
+.A1 .row>div:first-child{
+    color: white;
+    font-size: 30px;
+}
+.A1 i{
+    color: black;
+}
+
+.A1 a{
+    text-decoration: none;
+    color: black;
+}
+.A1 .fdfd a{
+    text-decoration: none;
+    color: white;
+}
+.A2{
+    margin-bottom: 30px;
+    color: white;
+    font-size: 40px;
+    padding: 35px;
+    background-color: #3d3b3b;
+}
+
+.A3{
+    color: white;
+    padding: 25px;
+    background-color: #1c1919;
+}
+.FFF>a{
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+.FFF a:hover{
+    color: coral;
+}
+.seven .ds i{
+    padding: 8px;
+    font-size: 28px;
+}
+.seven .ds a{
+    color: white;
+}
+.seven .ds a{
+    padding: 0;
+    color: white;
+}
+
+.seven .ds a:hover{
+    color: #e6615a;
+}

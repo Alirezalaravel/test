@@ -1,0 +1,52 @@
+.five .row>.col-lg-6:first-child{
+    position: relative;
+}
+
+.five .row>.col-lg-6:last-child .ee{
+    line-height: 28px;
+}
+
+
+.five .row>.col-lg-6:first-child .dds{
+    font-size: 20px;
+    font-family: Tahoma;
+    color: white;
+    padding: 15px 27px;
+    background-color: coral;
+    position: absolute;
+    right: 0px;
+    top: 40%;
+}
+.five .row>.col-lg-6:last-child{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: rgba(0, 0, 0, 0.12) solid 2px;
+    border-right: rgba(0, 0, 0, 0.11) solid 2px;
+    border-bottom: rgba(0, 0, 0, 0.1) solid 2px;
+}
+.five .row>.col-lg-6:last-child>div{
+    width: 90%;
+    margin: auto;
+}
+.five .HGF{
+    width: 83.8%;
+}
+
+.five{
+    margin-bottom: 80px;
+}
+
+.five .row{
+    width: 1080px;
+}
+.five .row>.col-lg-6:last-child .A{
+    margin-top: 50px;
+}
+
+.five .row>.col-lg-6:last-child a{
+    text-decoration: none;
+    color: black;
+}
+.five .row>.col-lg-6:last-child a:hover{
+    color: #e6615a;
+}
