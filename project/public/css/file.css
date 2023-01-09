@@ -1,0 +1,126 @@
+.background{
+    background-image: url("../img/gif1.gif");
+    height: 91%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p{
+    padding: 0 100px 35px 100px;
+}
+
+.form{
+    border-radius: 35px;
+    background-color: black;
+    border: 25px solid black;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+
+.p-header{
+    padding: 0 35px;
+}
+
+tr{
+    background-color: rgba(240, 255, 255, 0.885);
+}
+
+.thead{
+    background-color: rgba(145, 226, 226, 0.885);
+}
+
+
+/* .h{
+    height: 100% - 70px;
+} */
+
+.background-r{
+    border-radius: 100px;
+    background-image: url("../img/img2.jpg");
+    height: auto;
+    background-size: contain
+}
+
+.background-header{
+    /* background-image: url("../img/header.webp"); */
+    background-color: darkgrey;
+    width: 100%;
+    background-size: cover
+}
+.p-form{
+    padding: 0 400px 0 400px;
+}
+
+.p-table{
+    padding: 0 300px 0 300px;
+}
+
+.background-table{
+    background-image: url("../img/header.webp");
+}
+
+
+#app{
+    height: 100%;
+}
+
+@media (max-width: 1453px) {
+    .p-table{
+        padding: 0 240px 0 240px;
+    }
+}
+
+@media (max-width: 1322px) {
+    .p-table{
+        padding: 0 200px 0 200px;
+    }
+}
+
+
+@media (max-width: 1102px) {
+    .p-table{
+        padding: 0 90px 0 90px;
+    }
+}
+
+@media (max-width: 1102px) {
+    .p-table{
+        padding: 0 50px 0 50px;
+    }
+}
+
+@media (max-width: 880px) {
+    .p-table{
+        padding: 0 20px 0 20px;
+    }
+    .p{
+        padding: 0 50px 35px 50px;
+    }
+}
+
+@media (max-width: 710px) {
+    .p-table{
+        padding: 0 5px 0 5px;
+    }
+    .p{
+        padding: 0 40px 35px 40px;
+    }
+}
+
+html{
+    height: 100%;
+}
+
+input[type="file"]{
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(64, 81, 107, 0.582);
+    border-radius: 35px;
+    color: white;
+}
