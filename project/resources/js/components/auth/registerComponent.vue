@@ -5,14 +5,17 @@
           <div class="form">
             <h1 class="text-white text-center"> Register </h1>
             <div class="mb-3">
+              <img src="/img/user.png" alt="" width="20">
               <label for="username" class="form-label text-white">username</label>
               <input type="text" class="form-control" id="username" v-model="username" />
             </div>
             <div class="mb-3">
+              <img src="/img/password.png" alt="" width="20">
               <label for="password" class="form-label text-white">password</label>
               <input type="text" class="form-control" id="password" v-model="password" />
             </div>
             <div class="mb-3">
+              <img src="/img/email.png" alt="" width="20">
               <label for="email" class="form-label text-white">email</label>
               <input type="text" class="form-control" id="email" v-model="email" />
             </div>

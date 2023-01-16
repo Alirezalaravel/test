@@ -36,9 +36,9 @@ tr{
 }
 
 
-/* .h{
-    height: 100% - 70px;
-} */
+.h{
+    height: 91%;
+}
 
 .background-r{
     border-radius: 100px;
@@ -51,7 +51,8 @@ tr{
     /* background-image: url("../img/header.webp"); */
     background-color: darkgrey;
     width: 100%;
-    background-size: cover
+    background-size: cover;
+    height: 9%;
 }
 .p-form{
     padding: 0 400px 0 400px;
@@ -65,7 +66,7 @@ tr{
     background-image: url("../img/header.webp");
 }
 
-
+ 
 #app{
     height: 100%;
 }
@@ -124,3 +125,12 @@ input[type="file"]{
     border-radius: 35px;
     color: white;
 }
+
+.nav-link{
+    padding: 5px !important
+}
+
+a[href="/Search/null"]{
+    padding: 3px 5px !important;
+} 
+

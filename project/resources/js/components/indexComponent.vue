@@ -16,13 +16,13 @@
           </thead>
           <tbody v-for="item in items">
             <tr class="row">
-              <th scope="row" class="col align-self-center py-4">{{ item.id }}</th>  
-              <td class="col align-self-center py-4">{{ item.firstname }}</td>
-              <td class="col align-self-center py-4">{{ item.lastname }}</td>
-              <td class="col align-self-center py-4">{{ item.phone }}</td>
-              <td class="col align-self-center py-4"><img :src="`./image/${item.path}`" width="90" class="rounded-circle" alt="profile"></td>
-              <td class="col align-self-center mt-1"><router-link :to="`/edit/${item.id}`"><button class="btn btn-primary btn-sm" ><img src="/img/update.png" width="40"></button></router-link></td>
-              <td class="col align-self-center mt-1"><router-link to="/"><button class="btn btn-danger btn-sm" @click="DeleteUser(item.id)"><img src="/img/delete.png" width="40"></button></router-link></td>
+              <th scope="row" class="col align-self-center ">{{ item.id }}</th>  
+              <td class="col align-self-center">{{ item.firstname }}</td>
+              <td class="col align-self-center">{{ item.lastname }}</td>
+              <td class="col align-self-center">{{ item.phone }}</td>
+              <td class="col align-self-center"><img :src="`./image/${item.path}`" width="80" class="rounded-circle" alt="profile"></td>
+              <td class="col align-self-center"><router-link :to="`/edit/${item.id}`"><button class="btn btn-primary btn-sm" ><img src="/img/update.png" width="40"></button></router-link></td>
+              <td class="col align-self-center"><router-link to="/"><button class="btn btn-danger btn-sm" @click="DeleteUser(item.id)"><img src="/img/delete.png" width="40"></button></router-link></td>
             </tr>
           </tbody>
           </table>
@@ -80,3 +80,14 @@
   },
  }
 </script>
+
+<style>
+  tbody .row>* {
+    border-bottom-width: 0 !important;
+  }
+  tbody .row {
+    padding: 7px;
+    border-bottom-width: 1px !important;
+    border-bottom-color: black
+  }
+</style>

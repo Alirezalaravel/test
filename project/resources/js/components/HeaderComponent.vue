@@ -4,12 +4,12 @@
       <div class="d-flex flex-wrap align-items-center justify-content-center p-header">
 
         <ul class="nav col-lg-auto me-auto mb-2 justify-content-center">
-          <li><router-link to="/"><span class="nav-link px-2 link-secondary badge btn btn-secondary text-white">Home</span></router-link></li>
+          <li><router-link to="/"><span class="nav-link px-2 link-secondary badge btn btn-secondary text-white"><img src="/img/home.png" width="30" alt="home"></span></router-link></li>
         </ul>
 
         <form class="col-auto mb-0 me-3 row">
           <div class="col-auto align-self-center p-0">
-            <span @click="fun"><router-link :to="`/Search/${value}`" class="btn btn-outline-primary">Submit</router-link></span>
+            <span @click="fun"><router-link :to="`/Search/${value}`" class="btn btn-outline-primary"><img src="/img/search.png" alt="search" width="30"></router-link></span>
           </div>
           <div class="col-auto">
             <input type="search" class="form-control" placeholder="Search..." v-model="value">
@@ -37,18 +37,27 @@ export default {
   data() {
     return {
       value: null,
-      slug: null
+      slug: null,
+      token: localStorage.getItem('token')
     }
   },
   methods: {
     fun() {return this.value = null},
     logout(){
-        axios.get('/api/logout')
+      let self = this;
+        axios.get('/api/logout', 
+          {
+            header: {
+              Authorization: 'Bearer ' + self.token
+            }
+          }
+        )
           .then(function (response) {
             // handle success
             console.log(response);
           })
           .catch(function (error) {
+            console.log(self.token);
             // handle error
             console.log(error);
         })
