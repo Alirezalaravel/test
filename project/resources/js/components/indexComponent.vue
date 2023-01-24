@@ -39,6 +39,7 @@
     }
   },
   mounted() {
+    
     let self = this;
     axios.get('/api/data')
     .then(function (response) {

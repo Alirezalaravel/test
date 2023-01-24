@@ -14,13 +14,18 @@ Vue.use(VueRouter);
 const routes = [
     { 
         path: "/register" , 
-        component: require('./components/auth/registerComponent.vue').default , },
+        component: require('./components/auth/registerComponent.vue').default
+    },
     { 
         path: "/login" , 
         component: require('./components/auth/loginComponent.vue').default , 
         name: 'login'
     },
 
+    { 
+        path: "/header" , 
+        component: require('./components/HeaderComponent.vue').default , 
+    },
     // // ---------------------------------------------------------------------------------
 
     { 
@@ -56,6 +61,11 @@ const routes = [
          component: require('./components/profileComponent.vue').default , 
          meta: {requireAuth: true} 
     },
+    { 
+        path: "/profileEdit" ,
+         component: require('./components/profileEditComponent.vue').default , 
+         meta: {requireAuth: true} 
+    },
 ]
 
 const isUserLoggedIn = () => {
@@ -82,8 +92,6 @@ router.beforeEach((to , from, next) => {
         else{
             next("/login");
         }
-    } else {
-        next();
     }
 
     if (!to.meta.requireAuth) {
@@ -93,8 +101,6 @@ router.beforeEach((to , from, next) => {
         else{
             next("/");
         }
-    } else {
-        next();
     }
 
 })

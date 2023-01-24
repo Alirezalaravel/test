@@ -114,12 +114,25 @@ tr{
     }
 }
 
+.p-ll{
+    width: 30%;
+}
+
+@media (max-width: 1339px) {
+    .p-table{
+        padding: 0 5px 0 5px;
+    }
+    .p{
+        padding: 0 40px 35px 40px;
+    }
+}
+
 html{
     height: 100%;
 }
 
 input[type="file"]{
-    width: 100%;
+    width: 88%;
     padding: 10px;
     background-color: rgba(64, 81, 107, 0.582);
     border-radius: 35px;
@@ -134,3 +147,18 @@ a[href="/Search/null"]{
     padding: 3px 5px !important;
 } 
 
+.d-flex{
+    justify-content: flex-end;
+}
+
+.flex a:hover{
+    color: rgba(0, 0, 0, 0.473);
+}
+
+.border-img{
+    border-radius: 150px;
+}
+
+.border{
+    border-radius: 35px;
+}

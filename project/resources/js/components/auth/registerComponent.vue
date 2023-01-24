@@ -1,7 +1,7 @@
 <template>
     <div class="background">
       <div class="pt-5 pb-3 h p p-form">
-        <div class="p">
+        <div class="">
           <div class="form">
             <h1 class="text-white text-center"> Register </h1>
             <div class="mb-3">
@@ -20,6 +20,7 @@
               <input type="text" class="form-control" id="email" v-model="email" />
             </div>
             <div class="mb-3">
+              <img src="/img/image.png" alt="image" width="10%">
               <input type="file" @change="uploadFile" ref="file">
             </div>
            <button type="submit" class="btn btn-primary form-control" @click="Create">Submit</button>
@@ -41,26 +42,8 @@
         username: null,
         password: null,
         email: null,
-  
       }
     },
-    // methods: {
-    //   Create () { 
-    //     let self = this;
-    //   axios.post('/api/register', {
-    //     username: self.username,
-    //     password: self.password,
-    //     email: self.email,
-    //     })
-    //     .then(function (response) {
-    //       self.$router.push('/login')
-    //       console.log(response);
-    //     })
-    //     .catch(function (error) {
-    //       console.log(error);
-    //     });
-    //   }
-    // }
     methods: {
       Create () {
         const formData = new FormData();

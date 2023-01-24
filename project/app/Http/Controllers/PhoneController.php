@@ -15,7 +15,7 @@ class PhoneController extends Controller
         return Phone::all();
     }
 
-    public function store(PhoneRequest $request)
+    public function store(Request $request)
     {
         try {
             if ($request->hasFile("img")) {
@@ -101,21 +101,6 @@ class PhoneController extends Controller
         }
 
         return response()->json( $user , 200);
-    }
-
-    public function ProfileUpdate(Request $request)
-    {
-        # code...
-    }
-
-    public function ProfileEdit(Request $request)
-    {
-        # code...
-    }
-
-    public function profileData(Request $request)
-    {
-        return $request->user();
     }
 
 

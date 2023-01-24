@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
 
 class UserController extends Controller
 {
@@ -21,7 +23,7 @@ class UserController extends Controller
                 $file_name = $file->getClientOriginalName();
                 $name =  explode(".",$file_name);
                 $name = time() . '.' . end($name);
-                $file->move(public_path("image/profile"),$name);
+                $file->move(public_path("image/img"),$name);
             
                 $user = User::query()->create([
                     "username" => $request->get("username"),
@@ -36,8 +38,6 @@ class UserController extends Controller
                 "massege" => "Error"
             ],400);
         }
-
-        return $user->createToken("Api name")->plainTextToken;
     }
 
     public function login(Request $request)
@@ -49,19 +49,66 @@ class UserController extends Controller
         return $user->createToken($request->device_name)->plainTextToken;
     }
 
-    public function logout(Request $request)
-    {
+    public function logout(Request $request) {
         $request->user()->currentAccessToken()->delete();
         return response()->json([
-            "OK"
+            'message' => "logout ok"
         ]);
     }
 
-    public function profileData(Request $request)
+    public function profile(Request $request)
     {
+        return $request->user();
+    }
 
-        $request->user()->currentAccessToken()->delete();
+    public function img(Request $request)
+    {
+        return $request->user()->path;
+    }
+
+    public function update(Request $request)
+    {
+        try {
+            $user = $request->user();
+            if ($request->hasFile("path")) { 
+                File::delete("./image/img/".$user->path);
+                $file = $request->file("path");
+                $file_name = $file->getClientOriginalName();
+                $name =  explode(".",$file_name);
+                $name = time() . '.' . end($name);
+                $file->move(public_path("image/img"),$name);
+            }else{
+                $name = $user->path;
+            }
+            $user->update([      
+                "username" => $request->get("username"),
+                "email" => $request->get("email"),
+                "path" => $name
+            ]);
+            return response()->json([
+                $user
+            ]);
+        } catch (\Throwable $th) {
+            return response()->json([
+                "massege" => $th
+            ],400);
+        }
         
     }
 
+    public function destroy(Request $request)
+    {
+        $user = $request->user();
+        File::delete("./image/img/".$user->path);
+        $request->user()->currentAccessToken()->delete();
+        $user->delete();
+        return response()->json([
+            "massege" => "The user has been deleted"
+        ]);
+    }
+
 }
+
+
+
+
